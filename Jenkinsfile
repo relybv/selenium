@@ -4,7 +4,7 @@ node {
       // Clean workspace before checkout
       step ([$class: 'WsCleanup'])
       // Get some code from a GitHub repository
-      git 'https://github.com/relybv/jenkins.git'
+      git 'https://github.com/relybv/selenium.git'
    }
    stage('Selenium') {
       sh 'xvfb-run -a ruby test1.rb'
